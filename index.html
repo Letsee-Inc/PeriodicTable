@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insight AR WebApp Demo - Periodic Table</title>
+		
+		<script src="js/tween.min.js" type="text/javascript"></script>
+		<script src="js/tables.js" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="css/periodictable.css"/>
+		<script src="js/periodictable.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">			
+			window.addEventListener("arwebapploaded", function() {
+		   		initButton();
+				createPeriodic();
+
+				letsee.addEventListener(
+					"trackmove",
+					"targets/periodictable",
+					function(e) { TWEEN.update(); }
+				);
+	   		});
+		</script>
+		
+		<style media="place" type="text/css">
+		    #target { -ar-target: object("targets/periodictable"); }
+		</style>
+		
+	</head>
+	<body>
+		<div id="target"></div>
+		
+		<div id="menu">
+			<button id="table">TABLE</button>
+			<button id="sphere">SPHERE</button>
+			<button id="helix">HELIX</button>
+			<button id="grid">GRID</button>
+		</div>
+	</body>
+</html>

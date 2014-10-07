@@ -1,0 +1,9 @@
+{
+	"name" : "Periodictable",
+	"desc" : "Periodictable",
+	"descriptors" : [ { 
+	    "target_id" : "f2e72246d6c047c0b686d723b44f1b62",
+	    "target_name" : "periodictable",
+	    "target_data" : "periodictable.zip"
+	} ]
+}
