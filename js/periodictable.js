@@ -33,7 +33,7 @@ function initButton() {
 function createPeriodic() {
 	root = new THREE.Object3D();
 	root.scale.set(0.2, 0.2, 0.2);
-	letsee.Renderer.addChildObject("targets/periodictable", root);
+	Letsee.Renderer.addChildObject("targets/periodictable", root);
 
 	for (var i = 0; i < table.length; i++) {
 		var item = table[ i ];

@@ -11,11 +11,14 @@
 		<script src="js/periodictable.js" type="text/javascript"></script>
 		
 		<script type="text/javascript">			
-			window.addEventListener("arwebapploaded", function() {
+			window.addEventListener("letsee.load", function() {
 		   		initButton();
 				createPeriodic();
 
-				letsee.addEventListener(
+				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+				Letsee.addEventListener(
 					"trackmove",
 					"targets/periodictable",
 					function(e) { TWEEN.update(); }
